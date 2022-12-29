@@ -130,9 +130,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("CommentUserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("int");
-
                     b.HasKey("CommentID");
 
                     b.HasIndex("BlogID");

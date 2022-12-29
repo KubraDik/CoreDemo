@@ -23,7 +23,7 @@ namespace EntityLayer.Concrete
 
         public bool CommentStatus { get; set; }
 
-        public int MyProperty { get; set; }
+        //public int MyProperty { get; set; }
 
         //yorum yapmak istediğimiz yer,bir bloga yorum yapacağız
         public int BlogID { get; set; }

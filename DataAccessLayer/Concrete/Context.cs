@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    public class Context : DbContext//dbcontexten miras alır
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
