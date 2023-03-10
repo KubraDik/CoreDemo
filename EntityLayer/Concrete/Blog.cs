@@ -21,7 +21,9 @@ namespace EntityLayer.Concrete
         public int CategoryID { get; set; }//idnin tutulacağı alan
 
         public Category Category { get; set; }//ilişki yapılan tablonun türüdür.
-        public List<Comment> Comments { get; set; }
+        public int WriterID { get; set; }//idnin tutulacağı alan
+        public Writer Writer { get; set; }//ilişki yapılan tablonun türüdür.
+        public List<Comment> Comments { get; set; }//1//bir bloğa birden fazla yorum yapılabilinir.
 
     }
 }

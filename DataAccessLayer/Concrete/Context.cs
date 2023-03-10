@@ -12,6 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //usesqlserver metodunu çağırdık
             optionsBuilder.UseSqlServer("server=DESKTOP-U3UL2DI;database=CoreBlogDb;integrated security=true;");
         }
         public DbSet<About> Abouts { get; set; }
@@ -20,5 +21,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
+        public DbSet<NewsLetter> NewsLetters { get; set; }
     }
 }

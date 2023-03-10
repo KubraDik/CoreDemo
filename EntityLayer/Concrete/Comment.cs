@@ -26,9 +26,9 @@ namespace EntityLayer.Concrete
         //public int MyProperty { get; set; }
 
         //yorum yapmak istediğimiz yer,bir bloga yorum yapacağız
-        public int BlogID { get; set; }
+        public int BlogID { get; set; }//1
 
-        public Blog Blog { get; set; }
+        public Blog Blog { get; set; }//1
 
     }
 }

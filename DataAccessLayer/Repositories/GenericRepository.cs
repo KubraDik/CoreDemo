@@ -21,7 +21,7 @@ namespace DataAccessLayer.Repositories//crud işlemlerini tutar
         public T GetById(int id)
         {
             using var c = new Context();
-            return c.Set<T>().Find(id);
+            return c.Set<T>().Find(id);//idye göre getirebilmek için önce bulmalıyız
         }
 
         public List<T> GetListAll()
