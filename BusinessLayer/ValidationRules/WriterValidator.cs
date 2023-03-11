@@ -21,6 +21,8 @@ namespace BusinessLayer.ValidationRules
                 .WithMessage("Mail adresi boş geçilemez.")
                 .Matches(@"[@,.]+")
                 .WithMessage("Mail adresinde @ işareti ve en az bir noktalama işareti bulunmalıdır. ");
+
+
             RuleFor(x => x.WriterPassword)
                 .NotEmpty()
                 .WithMessage("Şifre boş geçilemez.")
@@ -30,6 +32,8 @@ namespace BusinessLayer.ValidationRules
                 .WithMessage("Sifre en az bir küçük harften ibaret olmalıdır.")
                 .Matches(@"[0-9]+")
                 .WithMessage("Sifre en az bir rakamdan ibaret olmalıdır.");
+
+
             RuleFor(x => x.WriterName)
                 .MinimumLength(2)
                 .WithMessage("Lütfen en az 2 karakter girişi yapalım")
